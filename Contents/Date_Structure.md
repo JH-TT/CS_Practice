@@ -1,5 +1,5 @@
 # 자료구조(Date Structure)
-* ### Stack
+* ### [Stack](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#stack-1)
 * ### Queue
 ## Stack
 * 개념
