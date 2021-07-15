@@ -106,4 +106,20 @@
 * 큐의 간단한 코드(Python)
 ```
     from collections import deque
+    q = deque()
+    q.append(1)
+    q.append(2)
+    q.append(3)
+    print(q)
+    print(q.popleft())
+    print(q.popleft())
+    print(q.popleft())
+    print(q.popleft())
+    
+    결과값
+    deque([1, 2, 3])
+    1
+    2
+    3
+    IndexError: pop from an empty deque (원소가 없는데 popleft를 하면 인덱스 에러가 뜬다.)
 ```
