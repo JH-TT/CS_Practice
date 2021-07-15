@@ -2,4 +2,4 @@
 * ### Stack
 * ### Queue
 ## Stack
-[top]
+> [top])
