@@ -92,9 +92,10 @@
   * 백준[스택] : https://www.acmicpc.net/problem/10828
   * 백준[괄호] : https://www.acmicpc.net/problem/9012
     
-> [top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0date-structure)/[Home](https://github.com/JH-TT/CS_Practice#pushpin-cs_practice)
 ## Reference
 > [이것이 코딩을 위한 코딩 테스트다 with 파이썬](https://book.naver.com/bookdb/book_detail.nhn?bid=16439154)
+
+> [top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0date-structure)/[Home](https://github.com/JH-TT/CS_Practice#pushpin-cs_practice)
 ***
 ## Queue
 * 개념
@@ -139,4 +140,6 @@
   * 백준[프린터 큐] : https://www.acmicpc.net/problem/1966
 ## Reference
 > [이것이 코딩을 위한 코딩 테스트다 with 파이썬](https://book.naver.com/bookdb/book_detail.nhn?bid=16439154)
+
 > [top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0date-structure)/[Home](https://github.com/JH-TT/CS_Practice#pushpin-cs_practice)
+***
