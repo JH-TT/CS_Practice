@@ -73,8 +73,18 @@
 ```
 * 스택의 사용 사례
   * 재귀 알고리즘
-    * 재귀 함수 : 자기 자신을 다시 호출하는 함수.(DFS : 깊이 우선 탐색)
+    * 재귀 함수 : 자기 자신을 다시 호출하는 함수.(ex. DFS : 깊이 우선 탐색)
       * 재귀함수는 언제 끝날지, 종료 조건을 반드시 적어줘야 한다.(그렇지 않으면 무한 호출될 수 있음.)
+    * 재귀함수를 이용한 팩토리얼 계산함수.
+    ```
+        def factorial_recursive(n):
+            if n <= 1:
+                return 1
+            return n * factorial_recursive(n - 1)
+        print(factorial_recursive(5))
+        
+        결과값 : 120
+    ```
   * 웹 브라우저 방문기록의 뒤로가기
   * 역순 문자열
   * 실행취소
@@ -82,3 +92,6 @@
   * 수식 괄호 검사(연산자 우선순위 표현을 위한 검사 ex. VPS(괄호 짝이 맞는지 검사))
     
 > [top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0date-structure)/[Home](https://github.com/JH-TT/CS_Practice#pushpin-cs_practice)
+## Queue
+* 개념
+  * 먼저 넣은 데이터가 먼저 나오는 자료구조.
