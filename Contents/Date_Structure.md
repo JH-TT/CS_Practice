@@ -97,5 +97,6 @@
 * 개념
   * 먼저 넣은 데이터가 먼저 나오는 자료구조.
 ![image](https://user-images.githubusercontent.com/79801565/125732224-ec1522a7-c88c-43ad-a2ca-38f8b97282bb.png)
-***
 ###### <출처> 컴퓨터인터넷IT용어대사전
+* 큐의 기능
+  * 큐는 **선입선출(FIFO, First In First Out)** 방식을 따른다.
