@@ -1,6 +1,6 @@
 # 자료구조(Date Structure)
 * ### [Stack](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#stack-1)
-* ### Queue
+* ### [Queue](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#queue-1)
 ## Stack
 * 개념
   * 가장 마지막에 입력된 자료를 가장 먼저 처리하는 선형 자료구조이다.
@@ -92,6 +92,7 @@
   * 수식 괄호 검사(연산자 우선순위 표현을 위한 검사 ex. VPS(괄호 짝이 맞는지 검사))
     
 > [top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0date-structure)/[Home](https://github.com/JH-TT/CS_Practice#pushpin-cs_practice)
+***
 ## Queue
 * 개념
   * 먼저 넣은 데이터가 먼저 나오는 자료구조.
