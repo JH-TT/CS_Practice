@@ -88,6 +88,9 @@
   * 실행취소
   * 후위 표기법 계산
   * 수식 괄호 검사(연산자 우선순위 표현을 위한 검사 ex. VPS(괄호 짝이 맞는지 검사))
+* 관련 문제
+  * 백준[스택] : https://www.acmicpc.net/problem/10828
+  * 백준[괄호] : https://www.acmicpc.net/problem/9012
     
 > [top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0date-structure)/[Home](https://github.com/JH-TT/CS_Practice#pushpin-cs_practice)
 ***
@@ -100,3 +103,7 @@
   * 큐는 **선입선출(FIFO, First In First Out)** 방식을 따른다.
   * 파이썬의 경우 **collection** 모듈에서 제공하는 **deque** 자료구조를 활용한다.
     * 리스트에서 앞에 원소를 넣거나 뺄 때 O(N)의 시간복잡도가 나오지만, deque를 이용하면 상수시간에 넣거나 뺄 수 있어서 좀 더 효율적이다.
+* 큐의 간단한 코드(Python)
+```
+    from collections import deque
+```
