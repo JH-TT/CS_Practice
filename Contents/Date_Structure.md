@@ -69,7 +69,7 @@
     Stack underflow
     None
 ```
-* 스택의 사용 사례
+* 스택의 활용 예시
   * 재귀 알고리즘
     * 재귀 함수 : 자기 자신을 다시 호출하는 함수.(ex. DFS : 깊이 우선 탐색)
       * 재귀함수는 **언제 끝날지**, **종료 조건**을 반드시 적어줘야 한다.(그렇지 않으면 무한 호출될 수 있음.)
@@ -93,6 +93,8 @@
   * 백준[괄호] : https://www.acmicpc.net/problem/9012
     
 > [top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0date-structure)/[Home](https://github.com/JH-TT/CS_Practice#pushpin-cs_practice)
+## Reference
+> [이것이 코딩을 위한 코딩 테스트다 with 파이썬](https://book.naver.com/bookdb/book_detail.nhn?bid=16439154)
 ***
 ## Queue
 * 개념
@@ -101,7 +103,7 @@
 ###### <출처> 컴퓨터인터넷IT용어대사전
 * 큐의 기능
   * 큐는 **선입선출(FIFO, First In First Out)** 방식을 따른다.
-  * 파이썬의 경우 **collection** 모듈에서 제공하는 **deque** 자료구조를 활용한다.
+  * 파이썬의 경우 **collections** 모듈에서 제공하는 **deque** 자료구조를 활용한다.
     * 리스트에서 앞에 원소를 넣거나 뺄 때 O(N)의 시간복잡도가 나오지만, deque를 이용하면 상수시간에 넣거나 뺄 수 있어서 좀 더 효율적이다.
 * 큐의 간단한 코드(Python)
 ```
@@ -123,3 +125,18 @@
     3
     IndexError: pop from an empty deque (원소가 없는데 popleft를 하면 인덱스 에러가 뜬다.)
 ```
+* 큐의 활용 예시
+  * 큐는 주로 데이터가 입력된 시간 순서대로 처리해야 할 필요가 있는 상황에 이용한다.
+    * 우선순위가 같은 작업 예약(프린터의 인쇄 대기열)
+    * 콜센터 고객 대기시간
+    * 너비 우선 탐색(BFS)
+    * 캐시 구현
+    * 프린터의 출력 처리
+    * 프로세스 관리
+    * 선입선출이 필요한 대기열(티켓 카운터)
+* 관련 문제
+  * 백준[큐] : https://www.acmicpc.net/problem/10845
+  * 백준[프린터 큐] : https://www.acmicpc.net/problem/1966
+## Reference
+> [이것이 코딩을 위한 코딩 테스트다 with 파이썬](https://book.naver.com/bookdb/book_detail.nhn?bid=16439154)
+> [top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md#%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0date-structure)/[Home](https://github.com/JH-TT/CS_Practice#pushpin-cs_practice)
