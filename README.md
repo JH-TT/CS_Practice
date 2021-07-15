@@ -1,3 +1,8 @@
-# 📝 CS_Practice
+# :pushpin: CS_Practice
 
-## Contents
+## 📝 Contents
+* [자료구조](https://github.com/JH-TT/CS_Practice/edit/main/README.md "자료구조")
+***
+# :apple: 자료구조
+* Stack
+* Queue
