@@ -1,7 +1,7 @@
 # 면접 질문들
 ## Contents
 * ### [Network](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#network-1)
-  * OSI 7계층
+  * [OSI 7계층](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#osi-7%EA%B3%84%EC%B8%B5)
   * HTTPS란?
   * TCP와 IP
 ## Network
