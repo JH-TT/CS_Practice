@@ -3,7 +3,7 @@
 * ### [Network](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#network-1)
   * [HTTPS란?](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#https%EB%9E%80)
   * [TCP/IP란 무엇인가?](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#tcpip%EB%9E%80)
-  * TCP와 UDP의 차이점
+  * [TCP와 UDP의 차이점](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#tcp%EC%99%80-udp%EC%9D%98-%EC%B0%A8%EC%9D%B4%EC%A0%90)
 # Network
 ## HTTPS란?
 * HyperText Transfer Protocol over Secure socket layer의 약자로 HTTP의 보안이 강화된 버전이다.
