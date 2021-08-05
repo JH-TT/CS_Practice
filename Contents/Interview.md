@@ -21,3 +21,4 @@ SSL은 표준화되기 전의 이름이고, 표준화된 정식 명칭이 TLS이
 * 데이터의 흐름관리, 정확성 확인, 패킷의 목적지 보장을 담당한다.(데이터의 정확성 확인은 TCP, 패킷을 목적지까지의 전송은 IP가 담당)
 * TCP/IP계층은 응용계층, 전송계층, 인터넷 계층, 네트워크 인터페이스 계층 총 4계층으로 구성된다.
 > [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#contents)
+## TCP와 UDP의 차이점
