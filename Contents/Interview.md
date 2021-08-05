@@ -2,6 +2,7 @@
 ## Contents
 * ### [Network](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#network-1)
   * [HTTPS란?](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#https%EB%9E%80)
+  * TCP/IP란 무엇인가?
   * TCP와 UDP의 차이점
 # Network
 ## HTTPS란?
@@ -15,3 +16,7 @@ SSL은 표준화되기 전의 이름이고, 표준화된 정식 명칭이 TLS이
   * TLS는 다양한 종류의 보안 통신을 하기 위한 프로토콜이고, HTTPS는 TLS위에 HTTP프로토콜을 얹어 보안된 HTTP통신을 하는 프로토콜이다.
   * TLS는 HTTP뿐만 아니라 FTP, SMTP와 같은 여타 프로토콜에도 적용할 수 있으며, HTTPS는 TLS와 HTTP가 조합된 프로토콜만을 가리킨다.
 > [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#contents)
+## TCP/IP란?
+* 인터넷 표준 프로토콜로서 컴퓨터 간의 주고받는 데이터를 전송할 때 에러가 발생하지 않도록 알맞게 나누어 전송하고 이를 수신하여 다시 기존의 정보로 변환하는 것을 약속해 놓은 것을 말한다.
+* 데이터의 흐름관리, 정확성 확인, 패킷의 목적지 보장을 담당한다.(데이터의 정확성 확인은 TCP, 패킷을 목적지까지의 전송은 IP가 담당)
+* TCP/IP계층은 응용계층, 전송계층, 인터넷 계층, 네트워크 인터페이스 계층 총 4계층으로 구성된다.
