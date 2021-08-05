@@ -22,3 +22,7 @@ SSL은 표준화되기 전의 이름이고, 표준화된 정식 명칭이 TLS이
 * TCP/IP계층은 응용계층, 전송계층, 인터넷 계층, 네트워크 인터페이스 계층 총 4계층으로 구성된다.
 > [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#contents)
 ## TCP와 UDP의 차이점
+![111](https://user-images.githubusercontent.com/79801565/128405265-b5ad943e-9943-49a9-8c49-7d2cd50357fc.PNG)
+
+[Reference](https://blog.naver.com/jsmb/222176084628)
+> [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#contents)
