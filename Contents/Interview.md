@@ -22,7 +22,7 @@ SSL은 표준화되기 전의 이름이고, 표준화된 정식 명칭이 TLS이
 * TCP/IP계층은 응용계층, 전송계층, 인터넷 계층, 네트워크 인터페이스 계층 총 4계층으로 구성된다.
 > [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#contents)
 ## TCP와 UDP의 차이점
-![111](https://user-images.githubusercontent.com/79801565/128405265-b5ad943e-9943-49a9-8c49-7d2cd50357fc.PNG)
+* TCP는 handshake동작으로 ACK를 주고받으며 신뢰성과 흐름제어를 제공하는 연결형 서비스이지만, UDP는 handshake동작을 하지않아 신뢰성은 떨어지지만 TCP보다는 빠른 비연결형 서비스이다. 또한 UDP는 CheckSum필드를 통해 최소한의 오류만 검출하고, 데이터가 유실되어도 이를 다시 요청하거나 할 수 있는 방법이 없다. 또한 혼잡을 제어할 수 있는 방법이 없다.
+* 여기서 연결형은 3, 4-way handshaking과정으로 연결을 설정, 해제하고, 비연결형은 데이터그램 방식을 제공한다.
 
-[Reference](https://blog.naver.com/jsmb/222176084628)
 > [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md#contents)
