@@ -8,5 +8,7 @@
 * Stack
 * Queue
 # :basketball: [CS](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md)
+* 프로세스와 스레드의 차이
+* 스레드 세이프(Thread safe)
 # :speech_balloon: [면접 질문들](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md)
 * ### Network
