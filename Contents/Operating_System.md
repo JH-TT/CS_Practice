@@ -37,9 +37,9 @@
 - Stack만 독립적으로 할당받고 나머지(Code, Data, Heap)은 공유한다. (이미지 참고)
 ![image](https://user-images.githubusercontent.com/79801565/129076178-23547c9a-7442-4bf0-830e-15e264ec8712.png)
 - 스레드는 code, data, heap을 공유하고 있기 때문에, 어떤 스레드 하나에서 오류가 발생한다면 같은 프로세스 내의 다른 스레드 모두가 강제로 종료된다.
-- Stack을 독립적으로 할당하는 이유
+#### Stack을 독립적으로 할당하는 이유
   - 스택은 함수 호출 시 전달되는 인자, 되돌아갈 주소값 및 함수 내에서 선언하는 변수 등을 저장하기 위해 사용되는 메모리 공간이므로 스택 메모리 공간이 독립적이라는 것은 **독립적인 함수 호출이 가능하다**는 것이고 이는 **독립적인 실행 흐름**이 추가되는 것이다. 따라서 스레드의 정의에 따라 독립적인 실행 흐름을 추가하기 위한 최소 조건으로 독립된 스택을 할당한다.
-- 장점
+#### 장점
   - 성능과 프로그램 처리율 향상
   - 응답시간 단축
   - 기억장소 낭비 줄어듬
@@ -52,3 +52,115 @@
 >    
 > [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
 - - -
+
+## 스레드 세이프(Thread Safe)
+- 다수의 스레드에 의한 동시 호출에서 안정성이 보장되는 코드를 스레드 세이프하다고 한다. 스레드 세이프한 코드에는 경합 조건이 없다.
+
+예시를 보자.
+(Not Thread Safe)
+```
+int num;
+boolean is_even;
+
+int inc(int n)
+{
+  num += n;
+  if((num % 2) == 0)
+    is_even = true;
+  else
+    is_even = false;
+  return num;
+}
+```
+위 코드를 보면, 싱글 스레드 환경에서는 문제가 없는 코드다.
+다만, 멀티 스레드 환경에서는 문제를 발생시킬 소지가 있다. 두 개의 스레드가 위 코드를 같이 수행한다고 가정해보자. 두 개의 스레드는 전역변수인 num, is_even을 공유한다.
+1번과 2번 스레드가 다음 함수를 수행했다고 하자
+```
+a = inc(1)
+```
+먼제 1번 스레드가 다음 라인까지 수행했다고 하자.
+```
+  num += n; // num = 1, n = 1
+  if ((num % 2) == 0)
+```
+num이 1인 상황에서 1을 더했으니 num % 2는 0이 되는 것이 맞다. 그리고 is_even에 true를 설정하기 바로 직전 다른 스레드가 다음 코드를 수행했다고 하자.
+```
+  num += n; // 2 + 1 = 3
+  ...
+  else
+    is_even = false;
+    
+  return num;
+}
+```
+1번 스레드가 num을 2로 세팅해 놓았기 때문에 num += n을 계산하면 3이 된다.
+3은 홀수이므로 is_even = false가 된다.
+이때, 다시 1번 스레드가 수행되어 is_even = true;를 수행한다.
+이런 수행 순서를 지나면, num값은 3이 되고, is_even은 true로 세팅된다. 프로그래머의 의도와 맞지 않는 결과가 멀티 스레드 환경에서 발생했기 때문에 Thread safe하지 않다고 할 수 있다.
+(Thread Safe)
+```
+int num;
+boolean is_even;
+pthread_mutex_t mutex_lock = PTHREAD_MUTEX_INITIALIZER;
+
+int inc(int n)
+{
+  pthread_mutex_lock (&mutex_lock);
+  /* Critical Section Start */
+  
+  num += n;
+  if ((num % 2) == 0)
+    is_even = true;
+  else
+    is_even = false;
+    
+  /* Critical Section End */
+  pthread_mutex_unlock(&mutex_lock);
+  
+  return num;
+}
+```
+이렇게 Critical Section을 정의해서 Critical Section은 한 번에 한 스레드만 수행되도록 만들어줘야 한다.
+그래서 하나의 스레드가 Critical Section에서 나오면, 기다리고 있었던 다른 스레드가 Critical Section으로 들어가게 된다. 들어가는 순서는 Critical Section을 만드는 구현체에 따라 다르다. Wait Queue를 두어 FIFO로 구현할 수도 있고, spinlock처럼 random하게 구현할 수도 있다.
+
+### 객체 멤버변수
+객체 멤버변수(필드)는 그 객체(클래스의 인스턴스)를 따라 힙에 저장된다. 때문에, 만약 두 스레드가 같은 객체 인스턴스의 메소드를 호출하고 이 메소드가 객체 멤버변수를 update한다면 이 메소드는 스레드 세이프하지 않다.
+
+예제를 보자.
+```
+public class NotThreadSafe{
+  StringBuilder builder = new StringBuilder();
+  
+  public add(String text){
+    this.builder.append(text);
+  }
+}
+
+NotThreadSafe sharedInstance = new NotThreadSafe(); // !!
+
+new Thread(new MyRunnable(sharedInstance)).start(); // !!
+new Thread(new MyRunnable(sharedInstance)).start(); // !!
+
+public class MyRunnable implements Runnable{
+  NotThreadSafe instance = null;
+
+  public MyRunnable(NotThreadSafe instance){
+    this.instance = instance;
+  }
+
+  public void run(){
+    this.instance.add("some text");
+  }
+}
+```
+이렇게 두 스레드가 동시에 같은 NotThreadSafe의 인스턴스의 add()메소드를 호출한다면, 이는 경합 조건을 일으킨다.(느낌표 2개 있는곳 주목)
+
+약간 수정해서 경합 조건이 발생하지 않도록 해보자.
+```
+new Thread(new MyRunnable(new NotThreadSafe())).start();
+new Thread(new MyRunnable(new NotThreadSafe())).start();
+```
+이렇게 하면 두 스레드는 각자의 NotThreadSafe 인스턴스를 가지며, 이 스레드들의 add() 메소드 호출은 더이상 서로 간섭하지 않는다.
+어떤 객체가 경합 조건을 일으키는 코드를 포함하고 있다고 해도 이 객체를 사용하는 방식에 따라 경합 조건은 발생하지 않을 수 있다.
+> [출처1](https://blog.naver.com/complusblog/220985528418)
+> [출처2](https://parkcheolu.tistory.com/12)
