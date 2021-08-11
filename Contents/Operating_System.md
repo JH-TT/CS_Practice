@@ -1,6 +1,6 @@
 # Operation System
 * [프로세스와 스레드의 차이](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%98-%EC%B0%A8%EC%9D%B4)
-* 스레드 세이프
+* [스레드 세이프](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#%EC%8A%A4%EB%A0%88%EB%93%9C-%EC%84%B8%EC%9D%B4%ED%94%84thread-safe)
 
 [메뉴로](https://github.com/JH-TT/CS_Practice)
 
@@ -162,5 +162,5 @@ new Thread(new MyRunnable(new NotThreadSafe())).start();
 ```
 이렇게 하면 두 스레드는 각자의 NotThreadSafe 인스턴스를 가지며, 이 스레드들의 add() 메소드 호출은 더이상 서로 간섭하지 않는다.
 어떤 객체가 경합 조건을 일으키는 코드를 포함하고 있다고 해도 이 객체를 사용하는 방식에 따라 경합 조건은 발생하지 않을 수 있다.
-> [출처1](https://blog.naver.com/complusblog/220985528418)
+> [출처1](https://blog.naver.com/complusblog/220985528418)   
 > [출처2](https://parkcheolu.tistory.com/12)
