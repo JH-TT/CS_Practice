@@ -7,6 +7,6 @@
 # :apple: [자료구조](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Date_Structure.md)
 * Stack
 * Queue
-# :basketball: [CS]
+# :basketball: [CS](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md)
 # :speech_balloon: [면접 질문들](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Interview.md)
 * ### Network
