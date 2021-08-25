@@ -1,5 +1,5 @@
 # Operation System
-* 운영체제란
+* [운영체제란](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%9E%80)
 * [프로세스와 스레드의 차이](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%98-%EC%B0%A8%EC%9D%B4)
 * [스레드 세이프](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#%EC%8A%A4%EB%A0%88%EB%93%9C-%EC%84%B8%EC%9D%B4%ED%94%84thread-safe)
 
@@ -9,6 +9,17 @@
 ### Operation System
 일반적으로 **하드웨어를 관리하고, 응용 프로그램과 하드웨어 사이에서 인터페이스 역할을 하며 시스템의 동작을 제어하는 시스템 소프트웨어**로 정의한다.
 
+운영체제는 사용자와 하드웨어간의 전반적인 상호작용을 하면서 컴퓨터가 실행되는 동안 항상 수행되는 프로그램이다.
+
+#### 운영체제의 목적
+- 사용자가 컴퓨터를 편리하게 사용하는 것
+- 컴퓨터 하드웨어가 효율적으로 사용되는 것
+
+#### 운영체제의 구조와 구성 요소
+운영체제는 하드웨어 위에 커널이 올라가고, 커널 위에서 셀과 애플리케이션이 실행된다. 사용자는 기본적으로 셀을 통해 애플리케이션을 실행한다.
+
+> [출처1](https://www.youtube.com/watch?v=EAoJb00Iwso)   
+> 
 >[Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
 - - -
 
