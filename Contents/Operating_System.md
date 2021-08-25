@@ -108,7 +108,7 @@ Stack과 데이터를 나눈 이유는, 스택 구조의 특성과 전역 변수
 프로그램의 함수와 지역 변수는, LIFO특성을 가진 스택에서 실행된다.
 따라서 이 함수들 안에서 공통으로 사용하는 '전역 함수'는 따로 지정해주면 메모리를 아낄 수 있다.
 
-> [참고](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Operating%20System/Process%20Address%20Space.md)
+> [참고](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Operating%20System/Process%20Address%20Space.md)   
 > [참고2](https://blog.naver.com/minuword/222232931907)
 >
 > [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
