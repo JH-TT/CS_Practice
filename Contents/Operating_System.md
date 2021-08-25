@@ -1,6 +1,7 @@
 # Operation System
 * [운영체제란](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C%EB%9E%80)
 * [프로세스와 스레드의 차이](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4%EC%99%80-%EC%8A%A4%EB%A0%88%EB%93%9C%EC%9D%98-%EC%B0%A8%EC%9D%B4)
+* [프로세스의 주소 공간]
 * [스레드 세이프](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#%EC%8A%A4%EB%A0%88%EB%93%9C-%EC%84%B8%EC%9D%B4%ED%94%84thread-safe)
 
 [메뉴로](https://github.com/JH-TT/CS_Practice)
@@ -39,11 +40,6 @@
 > [참고3](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Operating%20System/Operation%20System.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B4%80%EB%A6%AC)   
 > 
 >[Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
-- - -
-
-## 프로세스 주소 공간
-
-> [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
 - - -
 
 ## 프로세스와 스레드의 차이
@@ -91,6 +87,22 @@
 > [참고3](https://gmlwjd9405.github.io/2018/09/14/process-vs-thread.html)   
 > [참고4](https://shoark7.github.io/programming/knowledge/difference-between-process-and-thread)
 >    
+> [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
+- - -
+
+## 프로세스 주소 공간
+
+프로세스 주소 공간에는 코드, 데이터, 스택으로 이루어져 있다.
+ - 코드 Segment : 프로그램 소스 코드 저장
+ - 데이터 Segment : 전역 변수 저장
+ - 스택 Segment : 함수, 지역 변수 저장
+![image](https://user-images.githubusercontent.com/79801565/130770497-55a22845-e7a3-456d-93ad-626201d5fd08.png)   
+
+#### 구역을 나눈 이유?
+최대한 데이터를 공유하여 메모리 사용량을 줄여야 한다.
+코드는 같은 프로그램 자체에서는 모두 같은 내용이기 때문에 따로 관리하여 공유한다.
+Stack과 데이터를 나눈 이유는, 스택 구조의 특성과 전역 변수의 활용성을 위한 것이다.
+
 > [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
 - - -
 
