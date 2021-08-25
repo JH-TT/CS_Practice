@@ -29,13 +29,14 @@
   - **기억장치 관리자** : 기억장치 관리자는 프로세스에 메모리를 할당하거나 회수하는 등 주기억장치의 관리를 담당한다. 주기억장치 영역에 대한 요청이 들어오면 요구사항이 유효한지를 체크하고, 적법한 요구의 경우 주기억장치 관리자가 미사용 부분을 할당하고 작업을 마친 프로세스의 메모리 공간에 대해서는 회수하는 역할을 수행한다. 뿐만 아니라 보조기억장치인 HDD와 가상메모리에 대한 관리를 수행하는 데 디스크 탐색 알고리즘과 가상메모리 할당기법을 이용하여 기능을 수행한다.
   - **파일 관리자** : 파일 관리자는 파일의 생성, 삭제, 변경, 유지 등의 관리를 담당한다. 즉 컴파일러, 인터프러터, 어셈블러, 유틸리티 프로그램, 데이터 파일과 응용 프로그램을 포함한 시스템의 모든 파일을 모니터링하여 파일의 접근을 제어한다.
   - **장치 관리자** : 장치관리자는 입출력장치 스케쥴링 및 전반적인 관리를 담당한다. 채널과 제어장치를 모니터링하여 시스템의 모든 장치를 가장 효율적으로 할당하는 역할을 한다.
- - 구성을 그림으로 나타낸 모습.
+ - 구성을 그림으로 나타낸 모습.   
+![캡처](https://user-images.githubusercontent.com/79801565/130766440-019e23f4-939f-480a-a122-2c8356da2225.PNG)
 
 
 > [이미지출처1](https://johnloomis.org/ece314/notes/OperatingSystems/UNIX.html)   
 > [참고1](https://www.youtube.com/watch?v=EAoJb00Iwso)   
-> [참고2](https://blog.naver.com/phisldlfma/221278766833)
-> [참고3](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Operating%20System/Operation%20System.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B4%80%EB%A6%AC)
+> [참고2, 이미지2](https://blog.naver.com/phisldlfma/221278766833)   
+> [참고3](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Operating%20System/Operation%20System.md#%ED%94%84%EB%A1%9C%EC%84%B8%EC%8A%A4-%EA%B4%80%EB%A6%AC)   
 > 
 >[Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
 - - -
