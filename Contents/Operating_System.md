@@ -41,6 +41,11 @@
 >[Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
 - - -
 
+## 프로세스 주소 공간
+
+> [Top](https://github.com/JH-TT/CS_Practice/blob/main/Contents/Operating_System.md#operation-system)
+- - -
+
 ## 프로세스와 스레드의 차이
 ### 프로세스
 - 컴퓨터에서 연속적으로 실행되고 있는 컴퓨터 프로그램
