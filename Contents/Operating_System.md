@@ -103,7 +103,10 @@
 #### 구역을 나눈 이유?
 최대한 데이터를 공유하여 메모리 사용량을 줄여야 한다.
 코드는 같은 프로그램 자체에서는 모두 같은 내용이기 때문에 따로 관리하여 공유한다.
-Stack과 데이터를 나눈 이유는, 스택 구조의 특성과 전역 변수의 활용성을 위한 것이다.
+Stack과 데이터를 나눈 이유는, 스택 구조의 특성과 전역 변수의 활용성을 위한 것이다.   
+![68747470733a2f2f74312e6461756d63646e2e6e65742f6366696c652f746973746f72792f323137343031333835384631424544373041 1](https://user-images.githubusercontent.com/79801565/130776659-7d246190-27fb-43c9-99e7-0b8e0bdc48ca.png)   
+프로그램의 함수와 지역 변수는, LIFO특성을 가진 스택에서 실행된다.
+따라서 이 함수들 안에서 공통으로 사용하는 '전역 함수'는 따로 지정해주면 메모리를 아낄 수 있다.
 
 > [참고](https://github.com/gyoogle/tech-interview-for-developer/blob/master/Computer%20Science/Operating%20System/Process%20Address%20Space.md)
 > [참고2](https://blog.naver.com/minuword/222232931907)
